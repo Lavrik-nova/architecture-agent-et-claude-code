@@ -16,25 +16,84 @@ suppose que vous savez ce qu'est un harnais et on ne l'explique pas.
 
 ---
 
-## Le chiffre, avant tout le reste
+## Ce qui a réellement été bâti
 
-Un dépôt qui dit « production » sans montrer un chiffre demande un crédit qu'il
-n'a pas gagné. Voici le premier chiffre du projet, avec ses limites :
+Deux choses, et c'est pour elles que le reste de ce dépôt existe.
 
-> **62,8 % de réponses substantielles dès le premier tour.**
-> 121 questions réelles gelées, rejouées contre la version en production.
-> Quatre juges indépendants qui n'avaient pas vu la course.
-> **Prix et codes promo : 8,7 %** — la pire catégorie, et celle qui coûte des ventes.
->
-> Une seule course, un juge modèle, aucune ligne de base sans agent.
-> **C'est une référence, pas un verdict.**
+### Une pile de raisonnement, pas un arbre de décision
 
-Le détail, les trois incidents datés qui ont façonné l'architecture, et ce que
-ces chiffres ne prouvent pas :
-**[09 · Ce que la mesure a trouvé](docs/partie2/09-ce-que-la-mesure-a-trouve.md)**.
+Six couches entre un message entrant et une réponse envoyée, ordonnées pour que
+**les vérifications les moins chères et les plus déterministes passent en
+premier.** Quand un modèle entre en jeu, la langue est fixée, l'intention est
+connue, et l'ensemble des faits admissibles est déjà restreint.
 
-C'est le document que je lirais en premier si c'était le dépôt de quelqu'un
-d'autre.
+```mermaid
+flowchart LR
+    M["message"] --> L1["verrou de langue<br/><i>déterministe</i>"]
+    L1 --> L2["intention"]
+    L2 --> L3["fiches de principe<br/><i>25 règles gouvernées</i>"]
+    L3 --> L4["sélection des faits<br/><i>ce que ces règles exigent</i>"]
+    L4 --> L5{"contrat<br/>d'incertitude"}
+    L5 -->|suffisant| L6["génération<br/><i>bornée par les fiches</i>"]
+    L5 -->|insuffisant| E["s'arrêter · demander · passer la main"]
+    style L1 fill:#e7f5ff,stroke:#1971c2
+    style L5 fill:#fff4e6,stroke:#e8590c,stroke-width:2px
+    style E fill:#f3f0ff,stroke:#6741d9
+```
+
+Le cœur, ce sont **25 fiches de principe**, chacune une petite règle gouvernée à
+douze champs. Quatre d'entre eux font le travail qu'aucun jeu de règles ne fait :
+
+- **`forbidden_action`** — ce qui n'est jamais permis sous cette règle, porté à
+  côté de la permission. Présent sur les 25.
+- **`uncertainty_rule`** — quoi faire quand les entrées sont insuffisantes, **par
+  fiche, pas globalement**. 24 valeurs distinctes sur 25 fiches : une information
+  manquante ne signifie pas la même chose pour une question de garantie et pour
+  une question de stock.
+- **`known_facts`** — les faits dont la règle dépend, déclarés, pour que le
+  système puisse classer ce qui manque au lieu de l'énumérer.
+- **`exceptions`** — là où la règle ne tient pas.
+
+**[Lire la pile de raisonnement →](docs/partie2/03-pile-de-raisonnement.md)**
+
+### Une mémoire qui reste juste pendant que le catalogue bouge
+
+Des produits sont discontinués, des spécifications corrigées, le site modifié par
+quelqu'un qui ignore qu'un agent le lit. Un agent dont la connaissance est un
+instantané est juste le jour de sa mise en service et se dégrade ensuite —
+invisiblement, parce qu'une réponse périmée ressemble exactement à une réponse
+fraîche.
+
+Quatre mécanismes la tiennent :
+
+| | |
+|---|---|
+| **Trois états, pas deux** | Actif, **périmé**, absent. Replier celui du milieu fait soit nier des produits qui existent, soit vendre des produits qui n'existent plus |
+| **Le filtre de révision vit dans le SQL** | Pas dans le code appelant. Une page non approuvée est *inatteignable* — aucun chemin de code ne la rend, parce qu'aucun ne la sélectionne |
+| **La moindre erreur annule toute la réconciliation** | Un demi-balayage qui signale dix-neuf produits manquants est indiscernable de dix-neuf discontinués. Rien n'est jamais supprimé ; les lignes sont marquées |
+| **Révision humaine avant qu'un élément appris devienne vivant** | Un agent qui écrit sa connaissance durable sans révision n'est pas plus mûr — c'est un système dont les entrées fausses se renforcent elles-mêmes |
+
+**[Lire l'architecture de la mémoire →](docs/partie2/05-memoire-et-mises-a-jour.md)**
+
+---
+
+## Et cela a été mesuré
+
+Assez rare pour être dit franchement : ce système a été mesuré, contre un jeu
+gelé de questions réelles, par des juges qui n'avaient pas produit les réponses.
+
+**121 questions réelles**, gelées, rejouées contre la version en production.
+Quatre juges indépendants, chacun avec un contexte neuf, aucun n'ayant vu la
+course. **62,8 % des conversations réglées dès le premier tour sans intervention
+humaine** — et, dans la même course, la catégorie la plus faible mise au jour à
+8,7 %, ce qu'aucune moyenne globale n'aurait montré.
+
+Une seule course, un juge modèle, aucune ligne de base. **Une référence, pas un
+verdict** — et le document le dit.
+
+**[09 · Ce que la mesure a trouvé →](docs/partie2/09-ce-que-la-mesure-a-trouve.md)**
+— les chiffres, trois incidents datés avec numéros de ligne, et ce qu'ils ne
+prouvent pas.
 
 ---
 
