@@ -52,7 +52,7 @@ refusé.
 
 | № | Document | |
 |---|---|---|
-| 1 | [Ce qui est chargé, et pourquoi](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/01-what-is-loaded.md) 🇬🇧 | L'inventaire complet : graphe de code, extensions, compétences, quatre points d'accroche, la chaîne de validation, trois couches de mémoire |
+| 1 | [Ce qui est chargé, et pourquoi](docs/partie1/01-ce-qui-est-charge.md) | L'inventaire complet : graphe de code, extensions, compétences, quatre points d'accroche, la chaîne de validation, trois couches de mémoire |
 | 2 | [L'économie du contexte](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/02-context-economy.md) 🇬🇧 | Trois paliers de chargement et la règle de placement. Où va une règle, et ce qu'elle coûte d'y rester |
 | 3 | [Architecture de la mémoire](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/03-memory-architecture.md) 🇬🇧 | Arrivée → tri → wiki → index → journal en ajout seul. Pourquoi le refus est le produit principal |
 | 4 | [La compétence de tri](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/04-adjudication-skill.md) 🇬🇧 | La compétence entière, telle qu'elle tourne — pas sa description |
@@ -69,8 +69,8 @@ les formulations remplacées par un exemple neutre.
 
 | № | Document | |
 |---|---|---|
-| 1 | [Le problème](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/01-the-problem.md) 🇬🇧 | Le flux entrant, sa forme, et ce qu'il coûte quand un humain l'absorbe |
-| 2 | [Pourquoi un robot à scénarios échoue ici](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/02-why-scripts-fail.md) 🇬🇧 | Quatre classes de message réel qui brisent tout arbre de décision |
+| 1 | [Le problème](docs/partie2/01-le-probleme.md) | Le flux entrant, sa forme, et ce qu'il coûte quand un humain l'absorbe |
+| 2 | [Pourquoi un robot à scénarios échoue ici](docs/partie2/02-pourquoi-les-scenarios-echouent.md) | Quatre classes de message réel qui brisent tout arbre de décision |
 | 3 | [La pile de raisonnement](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/03-reasoning-stack.md) 🇬🇧 | Couche par couche : verrou de langue, intention, fiches de principe, sélection des faits, contrat d'incertitude, escalade |
 | 4 | [La connaissance produit](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/04-product-knowledge.md) 🇬🇧 | Comment les faits sont rangés, retrouvés, révisés et activés — et pourquoi le filtre vit dans le SQL |
 | 5 | [Une mémoire qui reste orientée](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/05-memory-and-updates.md) 🇬🇧 | Comment la base se met à jour et comment l'agent reste juste pendant qu'elle bouge |
