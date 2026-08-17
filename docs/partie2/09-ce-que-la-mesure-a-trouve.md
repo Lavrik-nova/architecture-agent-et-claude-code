@@ -56,6 +56,65 @@ confort de celui qui la publie.
 
 ---
 
+## Pourquoi 8,7 % — et ce que ce chiffre mesure réellement
+
+Il ne mesure pas le modèle. Il mesure l'état de l'information dans l'entreprise.
+
+**Sur les 45 manques, 33 sont « consultez le site » pour ce que le site
+n'affiche pas.** L'agent ne s'est pas trompé : il a renvoyé vers la source
+d'autorité, et la source ne contient pas la réponse. Aucune amélioration du
+raisonnement ne corrige cela.
+
+Le prix est la pire catégorie parce que c'est l'information qui vit au plus grand
+nombre d'endroits à la fois : la page produit, une campagne promotionnelle, la
+liste des détaillants, une exception accordée au téléphone. Rien de tout cela ne
+se contredit ouvertement — les versions coexistent simplement, chacune vraie
+quelque part.
+
+Le même défaut apparaît ailleurs dans la mesure : **deux fichiers de consignes
+vivants disaient l'inverse l'un de l'autre, sans règle de préséance.** Les juges
+ont trébuché dessus ; le modèle trébuche pareil.
+
+### Le principe, pour qui conçoit ces systèmes
+
+> **Un agent ne peut pas être plus cohérent que l'organisation qu'il fait parler.**
+> Il ne crée pas de faits. Il redistribue ceux qui existent — et là où l'entreprise
+> n'a pas de réponse unique et faisant autorité, il reproduit l'ambiguïté à
+> grande échelle et plus vite qu'un humain.
+
+Ce qui se règle par le raisonnement et ce qui ne s'y règle pas :
+
+| Cause du manque | Réparable côté agent |
+|---|---|
+| Le fait existe, la remontée l'a raté | Oui — récupération, mots-clés |
+| Le fait existe, la réplique le contredit | Oui — contrôle déterministe |
+| Deux sources vivantes se contredisent | **Non** — il faut une règle de préséance côté entreprise |
+| Le fait n'est publié nulle part | **Non** — c'est un travail de documentation |
+
+Deux lignes sur quatre ne relèvent pas de l'ingénierie.
+
+### Ce que cela change avant le premier jour de travail
+
+Avant de chiffrer un projet, cinq questions posées au client, par classe de fait
+— prix, disponibilité, spécifications, garantie :
+
+1. Existe-t-il **une** source qui fait autorité, ou plusieurs qui coexistent ?
+2. Est-elle lisible par une machine, ou seulement par un employé d'expérience ?
+3. Qui en est responsable, nommément ?
+4. À quelle fréquence change-t-elle, et qui l'apprend ?
+5. Quand deux sources se contredisent, laquelle gagne — et est-ce écrit ?
+
+Si la réponse à la première question est « ça dépend à qui on demande », le
+projet commence par un travail de mise en ordre documentaire, et **cela doit
+apparaître comme une phase distincte dans l'offre.** Absorbée dans le
+développement, elle devient invisible : le désordre reste celui du client et
+l'échec devient celui du fournisseur.
+
+C'est la leçon la plus transférable de toute cette mesure, et elle n'a rien à
+voir avec l'IA.
+
+---
+
 ## Les juges se sont trompés, et l'erreur est inscrite
 
 Cinq verdicts déclaraient une adresse de courriel affichée en clavardage comme
