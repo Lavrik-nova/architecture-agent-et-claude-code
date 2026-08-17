@@ -74,9 +74,9 @@ les formulations remplacées par un exemple neutre.
 | 3 | [La pile de raisonnement](docs/partie2/03-pile-de-raisonnement.md) | Couche par couche : verrou de langue, intention, fiches de principe, sélection des faits, contrat d'incertitude, escalade |
 | 4 | [La connaissance produit](docs/partie2/04-connaissance-produit.md) | Comment les faits sont rangés, retrouvés, révisés et activés — et pourquoi le filtre vit dans le SQL |
 | 5 | [Une mémoire qui reste orientée](docs/partie2/05-memoire-et-mises-a-jour.md) | Comment la base se met à jour et comment l'agent reste juste pendant qu'elle bouge |
-| 6 | [Limites et passage à l'humain](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/06-limits-and-handoff.md) 🇬🇧 | Quand le système doit s'arrêter, et pourquoi avouer son ignorance vaut ce que ça coûte |
-| 7 | [Attraper une mauvaise réponse](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/07-catching-bad-answers.md) 🇬🇧 | Ce qui est consigné à chaque échange, ce qui déclenche une alerte, comment une panne est disséquée |
-| 8 | [Ce qui est délibérément absent](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/08-deliberately-absent.md) 🇬🇧 | Les architectures refusées, avec leurs raisons |
+| 6 | [Limites et passage à l'humain](docs/partie2/06-limites-et-passage.md) | Quand le système doit s'arrêter, et pourquoi avouer son ignorance vaut ce que ça coûte |
+| 7 | [Attraper une mauvaise réponse](docs/partie2/07-attraper-une-mauvaise-reponse.md) | Ce qui est consigné à chaque échange, ce qui déclenche une alerte, comment une panne est disséquée |
+| 8 | [Ce qui est délibérément absent](docs/partie2/08-deliberement-absent.md) | Les architectures refusées, avec leurs raisons |
 | 9 | ⭐ [Ce que la mesure a trouvé](docs/partie2/09-ce-que-la-mesure-a-trouve.md) | **Les chiffres, trois incidents datés, et ce qu'ils ne prouvent pas** |
 
 ## Également ici
