@@ -66,7 +66,7 @@ qui est la chose la plus mécanique qu'un agent bilingue puisse faire.
 tour. Y consacrer un appel de modèle ajouterait de la latence partout et
 introduirait de la variance dans une question qui a une bonne réponse. Même
 principe que dans
-[Partie I · Les garde-fous](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/05-gates.md) 🇬🇧 :
+[Partie I · Les garde-fous](../partie1/05-garde-fous.md) :
 mettre la décision dans le code là où le code peut décider.
 
 ---

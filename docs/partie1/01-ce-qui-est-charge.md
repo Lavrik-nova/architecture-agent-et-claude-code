@@ -169,7 +169,7 @@ qu'on ne peut pas produire par réflexe — « oui », « ok » et « vas-y » s
 qu'on tape en pensant à autre chose.
 
 Le détail dans
-[05 · Les garde-fous](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/05-gates.md) 🇬🇧.
+[05 · Les garde-fous](05-garde-fous.md).
 
 ---
 

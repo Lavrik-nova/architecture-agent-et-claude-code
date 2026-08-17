@@ -39,11 +39,9 @@ d'autre.
 ---
 
 
-> 🇬🇧 **Note sur la langue.** L'édition française est en cours. Les documents
-> marqués d'un drapeau pointent vers l'original anglais, complet et à jour, le
-> temps que la rédaction française les rattrape. Traduits en premier : la page
-> d'accueil et le document 9, parce que ce sont les deux que je donnerais à lire
-> si je n'avais qu'une minute.
+> 🇬🇧 **Note sur la langue.** Les 17 documents sont en français. Le journal des
+> décisions et les gabarits restent en anglais — ce sont des fichiers à copier
+> dans un projet, et le code se travaille en anglais.
 
 ## Partie I · L'assistant configuré
 
@@ -56,10 +54,10 @@ refusé.
 | 2 | [L'économie du contexte](docs/partie1/02-economie-du-contexte.md) | Trois paliers de chargement et la règle de placement. Où va une règle, et ce qu'elle coûte d'y rester |
 | 3 | [Architecture de la mémoire](docs/partie1/03-architecture-memoire.md) | Arrivée → tri → wiki → index → journal en ajout seul. Pourquoi le refus est le produit principal |
 | 4 | [La compétence de tri](docs/partie1/04-competence-de-tri.md) | La compétence entière, telle qu'elle tourne — pas sa description |
-| 5 | [Les garde-fous](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/05-gates.md) 🇬🇧 | Réversible ou non. Où vit un vrai contrôle, et où un garde-fou n'est que du théâtre |
-| 6 | [Comment je sais que ça marche](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/06-how-i-know-it-works.md) 🇬🇧 | Critères fixés d'avance — et ce que je n'ai pas mesuré |
-| 7 | [L'ordre d'installation](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/07-installation-order.md) 🇬🇧 | Cinq étapes. La première consiste à ne rien faire pendant une semaine, exprès |
-| 8 | [Avant de construire un agent](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/08-before-you-build.md) 🇬🇧 | Neuf questions auxquelles je réponds avant la première ligne — et avant d'en ajouter un second |
+| 5 | [Les garde-fous](docs/partie1/05-garde-fous.md) | Réversible ou non. Où vit un vrai contrôle, et où un garde-fou n'est que du théâtre |
+| 6 | [Comment je sais que ça marche](docs/partie1/06-comment-je-le-sais.md) | Critères fixés d'avance — et ce que je n'ai pas mesuré |
+| 7 | [L'ordre d'installation](docs/partie1/07-ordre-installation.md) | Cinq étapes. La première consiste à ne rien faire pendant une semaine, exprès |
+| 8 | [Avant de construire un agent](docs/partie1/08-avant-de-construire.md) | Neuf questions auxquelles je réponds avant la première ligne — et avant d'en ajouter un second |
 
 ## Partie II · L'administrateur IA
 
