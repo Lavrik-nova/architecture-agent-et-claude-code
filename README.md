@@ -71,9 +71,9 @@ les formulations remplacées par un exemple neutre.
 |---|---|---|
 | 1 | [Le problème](docs/partie2/01-le-probleme.md) | Le flux entrant, sa forme, et ce qu'il coûte quand un humain l'absorbe |
 | 2 | [Pourquoi un robot à scénarios échoue ici](docs/partie2/02-pourquoi-les-scenarios-echouent.md) | Quatre classes de message réel qui brisent tout arbre de décision |
-| 3 | [La pile de raisonnement](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/03-reasoning-stack.md) 🇬🇧 | Couche par couche : verrou de langue, intention, fiches de principe, sélection des faits, contrat d'incertitude, escalade |
-| 4 | [La connaissance produit](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/04-product-knowledge.md) 🇬🇧 | Comment les faits sont rangés, retrouvés, révisés et activés — et pourquoi le filtre vit dans le SQL |
-| 5 | [Une mémoire qui reste orientée](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/05-memory-and-updates.md) 🇬🇧 | Comment la base se met à jour et comment l'agent reste juste pendant qu'elle bouge |
+| 3 | [La pile de raisonnement](docs/partie2/03-pile-de-raisonnement.md) | Couche par couche : verrou de langue, intention, fiches de principe, sélection des faits, contrat d'incertitude, escalade |
+| 4 | [La connaissance produit](docs/partie2/04-connaissance-produit.md) | Comment les faits sont rangés, retrouvés, révisés et activés — et pourquoi le filtre vit dans le SQL |
+| 5 | [Une mémoire qui reste orientée](docs/partie2/05-memoire-et-mises-a-jour.md) | Comment la base se met à jour et comment l'agent reste juste pendant qu'elle bouge |
 | 6 | [Limites et passage à l'humain](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/06-limits-and-handoff.md) 🇬🇧 | Quand le système doit s'arrêter, et pourquoi avouer son ignorance vaut ce que ça coûte |
 | 7 | [Attraper une mauvaise réponse](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/07-catching-bad-answers.md) 🇬🇧 | Ce qui est consigné à chaque échange, ce qui déclenche une alerte, comment une panne est disséquée |
 | 8 | [Ce qui est délibérément absent](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/08-deliberately-absent.md) 🇬🇧 | Les architectures refusées, avec leurs raisons |

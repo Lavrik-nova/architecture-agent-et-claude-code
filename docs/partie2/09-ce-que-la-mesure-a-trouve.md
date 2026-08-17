@@ -280,6 +280,6 @@ second a plus de valeur.
 
 ---
 
-**Voir aussi :** [03 · La pile de raisonnement](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/03-reasoning-stack.md) 🇬🇧 ·
+**Voir aussi :** [03 · La pile de raisonnement](03-pile-de-raisonnement.md) ·
 [07 · Attraper une mauvaise réponse](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/07-catching-bad-answers.md) 🇬🇧 ·
 [08 · Ce qui est délibérément absent](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part2/08-deliberately-absent.md) 🇬🇧
