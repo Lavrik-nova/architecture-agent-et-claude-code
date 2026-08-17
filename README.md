@@ -1,0 +1,118 @@
+# Claude Code, configuré — et l'agent qui en est sorti
+
+**Partie I** — ce que je charge dans Claude Code avant de construire quoi que ce
+soit : le graphe de code, les sous-agents critiques, le harnais, et les trois
+couches de mémoire qui empêchent une décision de s'évaporer entre deux sessions.
+
+**Partie II** — le système que j'ai bâti avec : un administrateur IA qui absorbe
+le flux entrant d'un manufacturier québécois dont le catalogue compte des
+centaines d'articles. Pas un robot à scénarios. Une pile de raisonnement.
+
+Écrit pour les ingénieurs qui construisent des agents avec Claude Code. On
+suppose que vous savez ce qu'est un harnais et on ne l'explique pas.
+
+[![Licence : MIT](https://img.shields.io/badge/Licence-MIT-black.svg)](LICENSE)
+[![English](https://img.shields.io/badge/Also%20in-English-1f6feb.svg)](https://github.com/Lavrik-nova/claude-code-and-agent-architecture)
+
+---
+
+## Le chiffre, avant tout le reste
+
+Un dépôt qui dit « production » sans montrer un chiffre demande un crédit qu'il
+n'a pas gagné. Voici le premier chiffre du projet, avec ses limites :
+
+> **62,8 % de réponses substantielles dès le premier tour.**
+> 121 questions réelles gelées, rejouées contre la version en production.
+> Quatre juges indépendants qui n'avaient pas vu la course.
+> **Prix et codes promo : 8,7 %** — la pire catégorie, et celle qui coûte des ventes.
+>
+> Une seule course, un juge modèle, aucune ligne de base sans agent.
+> **C'est une référence, pas un verdict.**
+
+Le détail, les trois incidents datés qui ont façonné l'architecture, et ce que
+ces chiffres ne prouvent pas :
+**[09 · Ce que la mesure a trouvé](docs/partie2/09-ce-que-la-mesure-a-trouve.md)**.
+
+C'est le document que je lirais en premier si c'était le dépôt de quelqu'un
+d'autre.
+
+---
+
+## Partie I · L'assistant configuré
+
+Ce qui est réellement installé, pourquoi chaque pièce est là, et ce que j'ai
+refusé.
+
+| № | Document | |
+|---|---|---|
+| 1 | [Ce qui est chargé, et pourquoi](docs/partie1/01-ce-qui-est-charge.md) | L'inventaire complet : graphe de code, extensions, compétences, quatre points d'accroche, la chaîne de validation, trois couches de mémoire |
+| 2 | [L'économie du contexte](docs/partie1/02-economie-du-contexte.md) | Trois paliers de chargement et la règle de placement. Où va une règle, et ce qu'elle coûte d'y rester |
+| 3 | [Architecture de la mémoire](docs/partie1/03-architecture-memoire.md) | Arrivée → tri → wiki → index → journal en ajout seul. Pourquoi le refus est le produit principal |
+| 4 | [La compétence de tri](docs/partie1/04-competence-de-tri.md) | La compétence entière, telle qu'elle tourne — pas sa description |
+| 5 | [Les garde-fous](docs/partie1/05-garde-fous.md) | Réversible ou non. Où vit un vrai contrôle, et où un garde-fou n'est que du théâtre |
+| 6 | [Comment je sais que ça marche](docs/partie1/06-comment-je-le-sais.md) | Critères fixés d'avance — et ce que je n'ai pas mesuré |
+| 7 | [L'ordre d'installation](docs/partie1/07-ordre-installation.md) | Cinq étapes. La première consiste à ne rien faire pendant une semaine, exprès |
+| 8 | [Avant de construire un agent](docs/partie1/08-avant-de-construire.md) | Neuf questions auxquelles je réponds avant la première ligne — et avant d'en ajouter un second |
+
+## Partie II · L'administrateur IA
+
+Étude d'architecture anonymisée. Aucun nom de client, aucun nom de produit,
+aucune invite reproduite mot pour mot : la structure et l'intention au complet,
+les formulations remplacées par un exemple neutre.
+
+| № | Document | |
+|---|---|---|
+| 1 | [Le problème](docs/partie2/01-le-probleme.md) | Le flux entrant, sa forme, et ce qu'il coûte quand un humain l'absorbe |
+| 2 | [Pourquoi un robot à scénarios échoue ici](docs/partie2/02-pourquoi-les-scenarios-echouent.md) | Quatre classes de message réel qui brisent tout arbre de décision |
+| 3 | [La pile de raisonnement](docs/partie2/03-pile-de-raisonnement.md) | Couche par couche : verrou de langue, intention, fiches de principe, sélection des faits, contrat d'incertitude, escalade |
+| 4 | [La connaissance produit](docs/partie2/04-connaissance-produit.md) | Comment les faits sont rangés, retrouvés, révisés et activés — et pourquoi le filtre vit dans le SQL |
+| 5 | [Une mémoire qui reste orientée](docs/partie2/05-memoire-et-mises-a-jour.md) | Comment la base se met à jour et comment l'agent reste juste pendant qu'elle bouge |
+| 6 | [Limites et passage à l'humain](docs/partie2/06-limites-et-passage.md) | Quand le système doit s'arrêter, et pourquoi avouer son ignorance vaut ce que ça coûte |
+| 7 | [Attraper une mauvaise réponse](docs/partie2/07-attraper-une-mauvaise-reponse.md) | Ce qui est consigné à chaque échange, ce qui déclenche une alerte, comment une panne est disséquée |
+| 8 | [Ce qui est délibérément absent](docs/partie2/08-deliberement-absent.md) | Les architectures refusées, avec leurs raisons |
+| 9 | [Ce que la mesure a trouvé](docs/partie2/09-ce-que-la-mesure-a-trouve.md) | **Les chiffres, trois incidents datés, et ce qu'ils ne prouvent pas** |
+
+## Également ici
+
+- **[Journal des décisions](decisions/README.md)** — chaque choix d'architecture
+  avec les options qui ont perdu et la raison.
+- **[Gabarits](templates/)** — fichier d'instructions, page de wiki, index,
+  journal, compétence de tri, fiche de décision. À copier.
+
+---
+
+## Une seule phrase traverse les deux parties
+
+> Dire à un modèle de ne pas faire quelque chose, c'est une demande.
+> Ce n'est pas un contrôle.
+
+Dans la partie I, c'est ce qui donne leur forme aux permissions et aux garde-fous.
+Dans la partie II, c'est pourquoi le filtre de révision est posé à l'intérieur de
+la requête SQL plutôt que dans l'invite — pour qu'aucun appelant ne puisse le
+contourner, y compris une version future du code écrite par quelqu'un qui a
+oublié la règle.
+
+Trois correctifs par retouche d'invite ont été annulés sur ce projet avant que la
+phrase soit écrite. Un cas est raconté en entier dans
+[09](docs/partie2/09-ce-que-la-mesure-a-trouve.md).
+
+---
+
+## Ce qui n'est pas ici
+
+**Aucune comparaison contrôlée** de cette configuration contre son absence. Il y a
+une mesure, un journal des décisions et des critères fixés d'avance — pas une
+expérience. Là où un nombre apparaît, sa méthode et ses limites sont écrites à
+côté.
+
+**Aucun système multi-agents que j'aurais construit.** J'argumente dans ce dépôt
+sur les conditions qui justifient un second agent, et je sais reconnaître qu'un
+argument n'est pas une pratique. Un relecteur externe me l'a fait remarquer et il
+avait raison ; c'est écrit ici plutôt que passé sous silence.
+
+**Aucun nom de client, aucun nom de produit, aucune donnée client** — sous aucune
+forme, y compris anonymisée.
+
+## Licence
+
+[MIT](LICENSE).
