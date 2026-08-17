@@ -148,7 +148,7 @@ seul fichier de connaissance qui grossit, soit chargé en permanence — donc au
 coût sans limite —, soit jamais, auquel cas c'est un journal intime.
 
 Le détail dans
-[03 · Architecture de la mémoire](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/03-memory-architecture.md) 🇬🇧.
+[03 · Architecture de la mémoire](03-architecture-memoire.md).
 
 ---
 
@@ -190,5 +190,5 @@ présente que ce qui a bien tourné est une brochure.
 
 ---
 
-**Suite :** [02 · L'économie du contexte](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/02-context-economy.md) 🇬🇧
+**Suite :** [02 · L'économie du contexte](02-economie-du-contexte.md)
 — comment ces pièces s'empêchent de se chasser les unes les autres.

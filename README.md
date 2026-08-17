@@ -53,9 +53,9 @@ refusé.
 | № | Document | |
 |---|---|---|
 | 1 | [Ce qui est chargé, et pourquoi](docs/partie1/01-ce-qui-est-charge.md) | L'inventaire complet : graphe de code, extensions, compétences, quatre points d'accroche, la chaîne de validation, trois couches de mémoire |
-| 2 | [L'économie du contexte](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/02-context-economy.md) 🇬🇧 | Trois paliers de chargement et la règle de placement. Où va une règle, et ce qu'elle coûte d'y rester |
-| 3 | [Architecture de la mémoire](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/03-memory-architecture.md) 🇬🇧 | Arrivée → tri → wiki → index → journal en ajout seul. Pourquoi le refus est le produit principal |
-| 4 | [La compétence de tri](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/04-adjudication-skill.md) 🇬🇧 | La compétence entière, telle qu'elle tourne — pas sa description |
+| 2 | [L'économie du contexte](docs/partie1/02-economie-du-contexte.md) | Trois paliers de chargement et la règle de placement. Où va une règle, et ce qu'elle coûte d'y rester |
+| 3 | [Architecture de la mémoire](docs/partie1/03-architecture-memoire.md) | Arrivée → tri → wiki → index → journal en ajout seul. Pourquoi le refus est le produit principal |
+| 4 | [La compétence de tri](docs/partie1/04-competence-de-tri.md) | La compétence entière, telle qu'elle tourne — pas sa description |
 | 5 | [Les garde-fous](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/05-gates.md) 🇬🇧 | Réversible ou non. Où vit un vrai contrôle, et où un garde-fou n'est que du théâtre |
 | 6 | [Comment je sais que ça marche](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/06-how-i-know-it-works.md) 🇬🇧 | Critères fixés d'avance — et ce que je n'ai pas mesuré |
 | 7 | [L'ordre d'installation](https://github.com/Lavrik-nova/claude-code-and-agent-architecture/blob/main/docs/part1/07-installation-order.md) 🇬🇧 | Cinq étapes. La première consiste à ne rien faire pendant une semaine, exprès |
